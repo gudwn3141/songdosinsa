@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>login</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div style = "text-align:center">
+        <hr/><font size="100px">LED 자전거</font>
+        <hr/><br/>
+            <h3>아래정보를 입력해주세요.</h3>
+
+      <form method = 'POST' action ='/logintwo'>
+        <p>
+          <h2>닉네임</h2>
+          <input type="text" name = 'userName' placeholder="userName" required><br/>
+        </p>
+        <p>
+          <h2>성별</h2>
+          남자 : <input type = "radio" name = "gender" value= "1" required>
+          여자 : <input type = "radio" name = "gender" value = "2" required><br/>
+        </p>
+        <p>
+          <h2>나이</h2>
+          9세 이하 : <input type = "radio" name = "age" value= '0' required><br/>
+          10~19세 : <input type = "radio" name = "age" value ='1' required><br/>
+          20~35세 : <input type = "radio" name = "age" value='2' required><br/>
+          36~49세 : <input type = "radio" name = "age" value ='3' required><br/>
+          50세 이상 : <input type = "radio" name = "age" value= '4' require><br/>
+        </p>
+        <p>
+          <h2>소속</h2>
+          <input type="text" name = 'myteam' placeholder="myteam" required><br/>
+        </p><br/>
+        <p>
+          <h2> 상대 팀 </h2>
+      <!--<input type = "text" name = 'competitor' placeholder ="competitor" required><br> -->
+          <input type = "text" name = "competitor" placeholder="competitor" required><br/>
+        </p>
+        <p><br/>
+            <br/>
+          <button type="submit" name="play" value="play">로그인</button>
+        </p>
+
+      </form>
+      <form method = 'POST' action ='/logintwo'>
+            <button type="submit" name="play" value="back">돌아가기</button>
+      </form>
+    </div>
+  </body>
+</html>
